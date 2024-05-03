@@ -1,5 +1,5 @@
 # cloud-final
-## Feeddback
+## Feedback
 Execute in commandline (Mac):
 mkdir package
 pip install \
