@@ -1,6 +1,6 @@
 # cloud-final
 ## Feedback
-### Execute in commandline (Mac):\n
+### Execute in commandline (Mac):'\n'
 mkdir package
 pip install \
 --platform manylinux2014_x86_64 \
