@@ -1,5 +1,6 @@
 # Cloud-FInal-Project
-## lambda-review
+## lambda-review  and lambda-response  
+Under their directory perform the following operations.   
 ### Execute in commandline (Mac):  
 mkdir package  
 pip install \  
@@ -30,5 +31,9 @@ zip -r ../lambda_function.zip .
 cd ..  
 zip lambda_function.zip lambda_function.py  
 zip lambda_function.zip .env  
+
+### Upload the Zip package to Lambda Function:  
+Go to Lambda cosole to upload the zip file.
+
 
 
