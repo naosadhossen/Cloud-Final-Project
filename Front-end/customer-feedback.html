@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Form</title>
+    <title>📃 Customer Feedback Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="review-container">
-        <h2>Feedback Form</h2>
-        <form id="review-form">
-            <textarea id="review-text" placeholder="Write your review here" required></textarea>
-            <button type="submit">Submit Review</button>
-        </form>
-        <p id="response-message"></p>
-    </div>
+    <section class="sec1">
+        <div class="review-container">
+            <h2>📃 Customer Feedback Form</h2>
+            <form id="review-form" onsubmit="return confirm('Do you want to submit the feedback?') && clearForm();">
+                <textarea class="textbox" id="review-text" placeholder="Write your review here" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+            <p id="response-message"></p>
+            <div class="bot_tex"> 
+                <p>Project developed by Group-E</p>
+            </div>
+        </div>
+    </section>
     <script src="feedback-script.js"></script>
 
-    <!-- You can include your JavaScript file here if needed -->
+    <script>
+        function clearForm() {
+            const reviewText = document.getElementById('review-text');
+            reviewText.value = '';
+            return true;
+        }
+    </script>
+
 </body>
 </html>
