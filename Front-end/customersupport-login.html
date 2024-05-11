@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👩‍💻 Customer Support Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="sec1"> 
+        <div class="login-container">
+            <h2>👩‍💻 Customer Support Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <a href="customer-login.html"> Click here for customer login! </a>
+            </form>
+            <p id="error-message"></p>
+            <div class="bot_tex"> 
+                <p>Project developed by Group-E</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="aws-sdk.min.js"></script>
+    <script src="amazon-cognito-identity.min.js"></script>
+    <script src="customersupport-login-script.js"></script>
+</body>
+</html>
